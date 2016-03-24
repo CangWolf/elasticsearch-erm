@@ -1,10 +1,7 @@
 package com.github.cangwolf.erm.util;
 
-import com.thebeastshop.pegasus.service.pub.vo.PsChnProdSaleSku;
-import com.thebeastshop.pegasus.service.pub.vo.PsDeliveryVO;
-import com.thebeastshop.pegasus.service.pub.vo.PsDynmContentVO;
-import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 
 import java.io.IOException;
@@ -78,13 +75,13 @@ public class BuilderUtil {
                 if (CollectionUtils.isNotEmpty((Collection) object)) {
                     boolean isbase = false;
                     Object value = ((List) object).get(0);
-                    if (value instanceof PsChnProdSaleSku) {
-                    } else if (value instanceof PsChnProdSaleSku) {
-                    } else if (value instanceof PsDynmContentVO) {
-                    } else if (value instanceof PsDeliveryVO) {
-                    } else {
-                        isbase = true;
-                    }
+//                    if (value instanceof PsChnProdSaleSku) {
+//                    } else if (value instanceof PsChnProdSaleSku) {
+//                    } else if (value instanceof PsDynmContentVO) {
+//                    } else if (value instanceof PsDeliveryVO) {
+//                    } else {
+//                        isbase = true;
+//                    }
                     if (isbase) {
                         buildField(builder, fieldName, object);
                     } else {
@@ -111,13 +108,13 @@ public class BuilderUtil {
             isbase = true;
         } else {
             Object value = objs.get(0);
-            if (value instanceof PsChnProdSaleSku) {
-            } else if (value instanceof PsChnProdSaleSku) {
-            } else if (value instanceof PsDynmContentVO) {
-            } else if (value instanceof PsDeliveryVO) {
-            } else {
-                isbase = true;
-            }
+//            if (value instanceof PsChnProdSaleSku) {
+//            } else if (value instanceof PsChnProdSaleSku) {
+//            } else if (value instanceof PsDynmContentVO) {
+//            } else if (value instanceof PsDeliveryVO) {
+//            } else {
+//                isbase = true;
+//            }
         }
         return isbase;
     }
