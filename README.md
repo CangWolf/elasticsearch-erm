@@ -1,5 +1,5 @@
-# ElastricSearch-erm 
-	this is a orm framework fro ElastricSearch, use ES like a DB 
+# ElasticSearch-erm 
+	this is a orm framework fro ElasticSearch, use ES like a DB 
 
 ## Why
 	Speed,speed , and speed
