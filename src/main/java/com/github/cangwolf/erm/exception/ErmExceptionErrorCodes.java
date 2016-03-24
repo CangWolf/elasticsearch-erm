@@ -1,0 +1,7 @@
+package com.github.cangwolf.erm.exception;
+
+/**
+ * Created by roy on 16-3-9.
+ */
+public class ErmExceptionErrorCodes {
+}
